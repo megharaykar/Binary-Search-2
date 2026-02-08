@@ -18,7 +18,6 @@ class Solution:
             elif nums[mid] < target:
                 low = mid + 1
             else:
-                print(leftBias,low,high, mid)
                 if leftBias:
                     if mid == low or nums[mid - 1] != nums[mid]:
                         return mid
